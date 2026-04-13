@@ -878,6 +878,9 @@ a.contacts__value:hover {
         padding: 46px 0;
         height: auto;
     }
+    .background-image {
+        width: 100px;
+    }
     .menu {
         width: 100%;
         position: fixed;
