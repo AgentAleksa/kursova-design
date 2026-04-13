@@ -864,23 +864,14 @@ a.contacts__value:hover {
     display: block;
 }
 @media screen and (max-width: 768px) {
-    .hero {
-        position: static;
-        margin-bottom: 0;
-        height: auto;
-        aspect-ratio: 1 / 1; /* або підбери під реальні пропорції 1.jpg */
-        background-size: contain;
-        background-position: center;
-        background-color: #f0c8c8;
-    }
-
     .project-hero {
-        height: 100vw;
+        height: auto;  /* замість 100vw */
     }
 
     .project-hero__img {
-        object-fit: cover;
-        object-position: top center;
+        object-fit: contain;
+        object-position: center;
+        background-color: #f0c8c8; /* колір під картинку якщо є поля */
     }
 
     .project-hero__title {
