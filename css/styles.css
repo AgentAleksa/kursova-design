@@ -867,7 +867,8 @@ a.contacts__value:hover {
     .hero {
         position: static;
         margin-bottom: 0;
-        height: 56vw;
+        height: auto;
+        aspect-ratio: 1 / 1; /* або підбери під реальні пропорції 1.jpg */
         background-size: contain;
         background-position: center;
         background-color: #f0c8c8;
