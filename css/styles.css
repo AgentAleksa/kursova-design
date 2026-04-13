@@ -864,16 +864,15 @@ a.contacts__value:hover {
     display: block;
 }
 /* Адаптація картинок для мобільних */
-/* Адаптація картинок для мобільних */
 @media screen and (max-width: 768px) {
   /* HERO (1.jpg) */
   .hero {
-    height: auto !important;              /* не фіксуємо 100vh */
-    min-height: 300px;
-    background-size: contain !important;  /* показує всю картинку */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f0c8c8;
+    height: auto !important;
+    min-height: 300px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: #f0c8c8 !important;
   }
 
   /* PROJECT HERO (3.jpg) */
@@ -884,12 +883,13 @@ a.contacts__value:hover {
   .project-hero__img {
     width: 100% !important;
     height: auto !important;
-    object-fit: contain !important;       /* показує всю картинку */
+    object-fit: contain !important;
     object-position: center !important;
-    background-color: #f0c8c8;
+    background-color: #f0c8c8 !important;
   }
 
   .project-hero__title {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
+
