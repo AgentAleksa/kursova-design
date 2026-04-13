@@ -1016,4 +1016,40 @@ a.contacts__value:hover {
         flex-direction: column;
         gap: 30px;
     }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .about-preview,
+    .portfolio,
+    .banner,
+    .services-preview,
+    .footer,
+    .inner-page,
+    .project-detail,
+    .about-team,
+    .about-company,
+    .about-stats,
+    .about-extra {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header__inner {
+        padding: 16px 20px;
+        width: 100%;
+    }
+
+    /* ШАПКА — фіксуємо ширину */
+    .header {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    /* ПОСЛУГИ — список не виходить за межі */
+    .services-preview__item {
+        flex-wrap: wrap;
+    }
 }
