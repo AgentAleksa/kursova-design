@@ -863,18 +863,32 @@ a.contacts__value:hover {
     object-fit: cover;
     display: block;
 }
+/* Адаптація картинок для мобільних */
 @media screen and (max-width: 768px) {
-    .project-hero {
-        height: auto;  /* замість 100vw */
-    }
+  /* HERO (1.jpg) */
+  .hero {
+    height: auto;              /* не фіксуємо 100vh */
+    min-height: 300px;         /* мінімальна висота */
+    background-size: contain;  /* показує всю картинку */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0c8c8; /* запасний фон */
+  }
 
-    .project-hero__img {
-        object-fit: contain;
-        object-position: center;
-        background-color: #f0c8c8; /* колір під картинку якщо є поля */
-    }
+  /* PROJECT HERO (3.jpg) */
+  .project-hero {
+    height: auto; /* замість 100vh */
+  }
 
-    .project-hero__title {
-        font-size: 28px;
-    }
+  .project-hero__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;       /* показує всю картинку */
+    object-position: center;
+    background-color: #f0c8c8; /* запасний фон */
+  }
+
+  .project-hero__title {
+    font-size: 28px; /* зменшений заголовок */
+  }
 }
