@@ -867,9 +867,10 @@ a.contacts__value:hover {
     .hero {
         position: static;
         margin-bottom: 0;
-        height: 100vw;
-        background-size: cover;
+        height: 56vw;
+        background-size: contain;
         background-position: center;
+        background-color: #f0c8c8;
     }
 
     .project-hero {
