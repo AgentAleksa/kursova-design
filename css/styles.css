@@ -881,6 +881,9 @@ a.contacts__value:hover {
     .background-image {
         width: 100px;
     }
+    .project-hero__img {
+        width: 100px;
+    }
     .menu {
         width: 100%;
         position: fixed;
