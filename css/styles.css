@@ -92,14 +92,19 @@ body {
 
 /* HERO */
 .hero {
-    height: 100vh;
-    background-image: url('../img/1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
     top: -63px;
     margin-bottom: -63px;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* ЗАГАЛЬНИЙ ЛЕЙБЛ */
@@ -862,4 +867,31 @@ a.contacts__value:hover {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        position: static;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .hero__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .project-hero {
+        height: 60vw;
+    }
+
+    .project-hero__img {
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .project-hero__title {
+        font-size: 28px;
+    }
 }
