@@ -870,6 +870,13 @@ a.contacts__value:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* ШАПКА */
+    .header__inner {
+        padding: 16px 20px;
+    }
+
+    /* HERO */
     .hero {
         position: static;
         margin-bottom: 0;
@@ -882,16 +889,131 @@ a.contacts__value:hover {
         object-fit: contain;
     }
 
+    /* НАША МІСІЯ */
+    .about-preview__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-preview__text {
+        text-align: left;
+    }
+
+    /* ПОРТФОЛІО */
+    .portfolio__grid {
+        flex-direction: column;
+    }
+
+    .portfolio__img {
+        height: 200px;
+    }
+
+    /* БАНЕР */
+    .banner__img {
+        height: 300px;
+    }
+
+    .banner__text {
+        width: 90%;
+    }
+
+    .banner__text p {
+        font-size: 14px;
+    }
+
+    /* ПОСЛУГИ */
+    .services-preview__inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* ФУТЕР */
+    .footer__letter {
+        font-size: 80px;
+    }
+
+    .footer__top {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* ПРОЄКТ HERO */
     .project-hero {
         height: 60vw;
     }
 
-    .project-hero__img {
-        object-fit: cover;
-        object-position: top center;
+    .project-hero__title {
+        font-size: 24px;
     }
 
-    .project-hero__title {
-        font-size: 28px;
+    .project-hero__overlay {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    /* ПЛАНУВАННЯ */
+    .project-plan {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* МАТЕРІАЛИ */
+    .project-materials__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ГАЛЕРЕЯ */
+    .project-gallery__row-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery__row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* ПРО НАС */
+    .about-team__inner {
+        flex-direction: column;
+    }
+
+    .about-team__img {
+        height: 300px;
+    }
+
+    .about-stats__inner {
+        flex-direction: column;
+    }
+
+    .about-extra__img-block {
+        flex-direction: column;
+    }
+
+    .about-extra__img {
+        width: 100%;
+    }
+
+    /* КОНТАКТИ */
+    .contacts__block {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* ВНУТРІШНІ СТОРІНКИ */
+    .inner-page {
+        padding: 100px 20px 60px;
+    }
+
+    .inner-page__title {
+        font-size: 32px;
+    }
+
+    /* ПОСЛУГИ СТОРІНКА */
+    .services-page__photos {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page__bottom {
+        flex-direction: column;
+        gap: 30px;
     }
 }
